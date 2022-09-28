@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20220928091654" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20220928091654">
+	<title>Główna Strona</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class='container'>
+			<div class="header__body">
+				<a href="#" class="header__logo">
+					<picture>
+						<source srcset="img/navbar/logo.png" type="image/png"><img src="img/navbar/logo.png" alt="LOGO">
+					</picture>
+				</a>
+				<nav class="header__menu">
+					<ul class="header__list">
+						<li>
+							<a href="#" class="header__link">Home</a>
+						</li>
+						<li>
+							<a href="#services" class="header__link">Services</a>
+						</li>
+						<li>
+							<a href="#about" class="header__link">About</a>
+						</li>
+						<li>
+							<a href="#contact" class="header__link">Contact</a>
+						</li>
+						<li>
+							<button class="sigh__btn">Sign in</button>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__shop">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px"
+						height="23px">
+						<path class="nav__svg user__svg" fill-rule="evenodd" fill="rgb(233, 229, 218)"
+							d="M14.541,12.215 L13.549,11.682 L14.334,10.894 C15.440,9.786 16.049,8.336 16.049,6.812 C16.049,3.484 13.269,0.777 9.853,0.777 C6.431,0.777 3.540,3.541 3.540,6.812 C3.540,8.335 4.169,9.787 5.311,10.899 L6.121,11.688 L5.112,12.230 C1.959,13.919 -0.000,17.074 -0.000,20.462 L-0.000,22.154 C-0.000,22.620 0.397,23.000 0.885,23.000 L18.704,23.000 C19.192,23.000 19.589,22.620 19.589,22.154 L19.589,20.462 C19.589,17.050 17.654,13.890 14.541,12.215 ZM5.310,6.812 C5.310,4.499 7.433,2.469 9.853,2.469 C12.252,2.469 14.279,4.458 14.279,6.812 C14.279,9.145 12.293,11.043 9.853,11.043 C7.391,11.043 5.310,9.105 5.310,6.812 ZM17.819,21.308 L1.770,21.308 L1.770,20.462 C1.770,16.273 5.472,12.735 9.853,12.735 C14.246,12.735 17.819,16.201 17.819,20.462 L17.819,21.308 Z" />
+					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19px"
+						height="23px">
+						<path class="nav__svg shop__svg" fill-rule="evenodd" fill="rgb(233, 229, 218)"
+							d="M18.254,23.000 L0.740,23.000 C0.532,23.000 0.332,22.911 0.191,22.758 C0.051,22.604 -0.019,22.397 -0.000,22.190 L1.415,6.422 C1.450,6.036 1.768,5.745 2.156,5.745 L5.154,5.745 L5.154,4.345 C5.154,1.949 7.103,0.000 9.498,0.000 C11.893,0.000 13.842,1.949 13.842,4.345 L13.842,5.745 L16.838,5.745 C17.226,5.745 17.544,6.036 17.579,6.422 L18.991,22.140 C18.996,22.174 19.000,22.214 19.000,22.254 C19.000,22.666 18.665,23.000 18.254,23.000 ZM13.099,9.552 C12.688,9.552 12.355,9.218 12.355,8.808 L12.355,7.233 L6.641,7.233 L6.641,8.808 C6.641,9.218 6.308,9.552 5.897,9.552 C5.487,9.552 5.154,9.218 5.154,8.808 L5.154,7.233 L2.836,7.233 L1.554,21.512 L17.440,21.512 L16.158,7.233 L13.843,7.233 L13.843,8.808 C13.843,9.218 13.509,9.552 13.099,9.552 ZM9.498,1.488 C7.923,1.488 6.641,2.770 6.641,4.345 L6.641,5.745 L12.355,5.745 L12.355,4.345 C12.355,2.770 11.073,1.488 9.498,1.488 Z" />
+					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27px"
+						height="15px">
+						<path class="nav__svg menu__svg" fill-rule="evenodd" fill="rgb(233, 229, 218)"
+							d="M26.101,8.896 L0.896,8.896 C0.401,8.896 -0.001,8.271 -0.001,7.500 C-0.001,6.728 0.401,6.103 0.896,6.103 L26.101,6.103 C26.596,6.103 26.998,6.728 26.998,7.500 C26.998,8.271 26.596,8.896 26.101,8.896 ZM26.101,2.790 L0.896,2.790 C0.401,2.790 -0.001,2.165 -0.001,1.394 C-0.001,0.623 0.401,-0.002 0.896,-0.002 L26.101,-0.002 C26.596,-0.002 26.998,0.623 26.998,1.394 C26.998,2.165 26.596,2.790 26.101,2.790 ZM0.896,12.209 L26.101,12.209 C26.596,12.209 26.998,12.834 26.998,13.605 C26.998,14.376 26.596,15.001 26.101,15.001 L0.896,15.001 C0.401,15.001 -0.001,14.376 -0.001,13.605 C-0.001,12.834 0.401,12.209 0.896,12.209 Z" />
+					</svg>
+				</div>
+				<div class="header__burger">
+					<span></span>
+				</div>
+			</div>
+		</div>
+
+	</header>
+	<main>
+		<section class="hero">
+			<div class="hero__body">
+				<div class="hero__left">
+					<div class="hero__title">Flower Arrangements</div>
+					<div class="hero__subtitle">• For all special occasions •</div>
+					<div class="hero__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore magna aliqua.</div>
+					<div class="hero__btns">
+						<button>Shop</button>
+						<a href="#services">Read More</a>
+					</div>
+					<picture>
+						<source srcset="img/hero/plant2.png" type="image/png"><img class="plant2" src="img/hero/plant2.png"
+							alt=""></picture>
+					<picture>
+						<source srcset="img/hero/plant1.png" type="image/png"><img class="plant1" src="img/hero/plant1.png"
+							alt=""></picture>
+				</div>
+				<div class="hero__right">
+					<picture>
+						<source srcset="img/hero/hero-img.png" type="image/png"><img src="img/hero/hero-img.png"
+							alt="hero-img"></picture>
+				</div>
+			</div>
+		</section>
+		<section class="count">
+			<div class="container">
+				<div class="count__body">
+					<div class="count__item">
+						<div class="count__title">3000+</div>
+						<div class="count__text">Packages Sold</div>
+					</div>
+					<div class="count__item">
+						<div class="count__title">5000+</div>
+						<div class="count__text">Bouquet Sold</div>
+					</div>
+					<div class="count__item">
+						<div class="count__title">7000+</div>
+						<div class="count__text">Happy Clients</div>
+					</div>
+					<div class="count__item">
+						<div class="count__title">10+</div>
+						<div class="count__text">Years of Experience</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="product" id="services">
+
+			<div class="product__title">
+				<div class="container">
+					<h1>Our Top Products</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur.</p>
+					<picture>
+						<source srcset="img/products/plant1.png" type="image/png"><img class="left"
+							src="img/products/plant1.png" alt=""></picture>
+					<picture>
+						<source srcset="img/products/plant1.png" type="image/png"><img class="right"
+							src="img/products/plant1.png" alt=""></picture>
+				</div>
+
+
+			</div>
+			<!-- Slider main container -->
+			<div class="product-slider swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide">
+						<div class="product__card">
+							<div class="card__img">
+								<picture>
+									<source srcset="img/products/prod1.png" type="image/png"><img src="img/products/prod1.png"
+										alt="prod1"></picture>
+							</div>
+							<div class="card__item">
+								<div class="card__like">
+									<picture>
+										<source srcset="img/products/hart.png" type="image/png"><img src="img/products/hart.png"
+											alt=""></picture>
+								</div>
+								<div class="card__title">Lorem ipsum</div>
+								<div class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio non omnis
+									itaque.
+								</div>
+								<div class="card__btn small__btn"><button>Read More</button></div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="product__card">
+							<div class="card__img">
+								<picture>
+									<source srcset="img/products/prod2.png" type="image/png"><img src="img/products/prod2.png"
+										alt="prod1"></picture>
+							</div>
+							<div class="card__item">
+								<div class="card__like">
+									<picture>
+										<source srcset="img/products/hart.png" type="image/png"><img src="img/products/hart.png"
+											alt=""></picture>
+								</div>
+								<div class="card__title">Lorem ipsum</div>
+								<div class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio non omnis
+									itaque.
+								</div>
+								<div class="card__btn small__btn"><button>Read More</button></div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="product__card">
+							<div class="card__img">
+								<picture>
+									<source srcset="img/products/prod3.png" type="image/png"><img src="img/products/prod3.png"
+										alt="prod1"></picture>
+							</div>
+							<div class="card__item">
+								<div class="card__like">
+									<picture>
+										<source srcset="img/products/hart.png" type="image/png"><img src="img/products/hart.png"
+											alt=""></picture>
+								</div>
+								<div class="card__title">Lorem ipsum</div>
+								<div class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio non omnis
+									itaque.
+								</div>
+								<div class="card__btn small__btn"><button>Read More</button></div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="product__card">
+							<div class="card__img">
+								<picture>
+									<source srcset="img/products/prod4.png" type="image/png"><img src="img/products/prod4.png"
+										alt="prod1"></picture>
+							</div>
+							<div class="card__item">
+								<div class="card__like">
+									<picture>
+										<source srcset="img/products/hart.png" type="image/png"><img src="img/products/hart.png"
+											alt=""></picture>
+								</div>
+								<div class="card__title">Lorem ipsum</div>
+								<div class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio non omnis
+									itaque.
+								</div>
+								<div class="card__btn small__btn"><button>Read More</button></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+				<!-- navigation buttons -->
+				<div class="navigation">
+					<div class="button-prev navi">
+						<picture>
+							<source srcset="img/products/left.png" type="image/png"><img src="img/products/left.png" alt="">
+						</picture>
+					</div>
+					<div class="button-next navi">
+						<picture>
+							<source srcset="img/products/right.png" type="image/png"><img src="img/products/right.png" alt="">
+						</picture>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<section class="video">
+			<div class="container">
+				<div class="video__title">How we do it</div>
+				<div class="video__text">Lorem ipsum dolor sit amet consectetur.</div>
+				<div class="video__img">
+					<picture>
+						<source srcset="img/video/video.png" type="image/png"><img src="img/video/video.png" alt="">
+					</picture>
+				</div>
+			</div>
+			<picture>
+				<source srcset="img/products/plant2.png" type="image/png"><img class="left" src="img/products/plant2.png"
+					alt=""></picture>
+			<picture>
+				<source srcset="img/products/plant2.png" type="image/png"><img class="right" src="img/products/plant2.png"
+					alt=""></picture>
+		</section>
+		<section class="offer">
+			<div class="offer__item">
+				<div class="offer__btn"><button>Special Offer</button></div>
+				<div class="offer__title">20%</div>
+				<div class="offer__text">Discount on your first purchase</div>
+				<picture>
+					<source srcset="img/products/plant1.png" type="image/png"><img src="img/products/plant1.png" alt=""
+						class="left"></picture>
+				<picture>
+					<source srcset="img/products/plant1.png" type="image/png"><img src="img/products/plant1.png" alt=""
+						class="right"></picture>
+			</div>
+			<div class="offer__img">
+				<picture>
+					<source srcset="img/offer/offer.png" type="image/png"><img src="img/offer/offer.png" alt=""></picture>
+			</div>
+		</section>
+		<section class="about" id="about">
+			<div class="container"></div>
+			<div class="flowers">
+				<picture>
+					<source srcset="img/about/plant2.png" type="image/png"><img src="img/about/plant2.png" alt=""
+						class="flowers__big"></picture>
+				<div class="flowers__container">
+					<div class="flowers__img">
+						<picture>
+							<source srcset="img/about/flower1.png" type="image/png"><img src="img/about/flower1.png" alt="">
+						</picture>
+					</div>
+					<div class="flowers__item">
+						<picture>
+							<source srcset="img/about/plant1.png" type="image/png"><img src="img/about/plant1.png" alt=""
+								class="small"></picture>
+						<div class="flowers__title item__title">We select the
+							best flowers</div>
+						<div class="flowers__text item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+						<div class="flovers__btn small__btn"><button>Read More</button></div>
+					</div>
+				</div>
+
+			</div>
+			<div class="details">
+				<picture>
+					<source srcset="img/about/plant2.png" type="image/png"><img src="img/about/plant2.png" alt=""
+						class="details__big"></picture>
+				<div class="details__container">
+					<div class="details__item">
+						<picture>
+							<source srcset="img/about/plant1.png" type="image/png"><img src="img/about/plant1.png" alt=""
+								class="small"></picture>
+						<div class="details__title item__title">We take care
+							of the details</div>
+						<div class="details__text item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+						<div class="details__btn small__btn"><button>Read More</button></div>
+					</div>
+					<div class="details__img">
+						<picture>
+							<source srcset="img/about/flower2.png" type="image/png"><img src="img/about/flower2.png" alt="">
+						</picture>
+					</div>
+				</div>
+
+			</div>
+			<div class="welove">
+				<picture>
+					<source srcset="img/about/plant2.png" type="image/png"><img src="img/about/plant2.png" alt=""
+						class="welove__big"></picture>
+				<div class="welove__container">
+					<div class="welove__img">
+						<picture>
+							<source srcset="img/about/flower3.png" type="image/png"><img src="img/about/flower3.png" alt="">
+						</picture>
+					</div>
+					<div class="welove__item">
+						<picture>
+							<source srcset="img/about/plant1.png" type="image/png"><img src="img/about/plant1.png" alt=""
+								class="small"></picture>
+						<div class="welove__title item__title">We love what
+							we do</div>
+						<div class="welove__text item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore</div>
+						<div class="welove__btn small__btn"><button>Read More</button></div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<section class="contact" id="contact">
+			<div class="container">
+				<div class="contact__title">Subscribe to our
+					newsletter</div>
+				<div class="contact__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor
+					incididunt ut labore et dolore magna aliqua.</div>
+				<form action="" class="contact__form">
+					<input class="contact__name" type="text" placeholder="Your Name">
+					<input class="contact__email" type="email" name="" id="" placeholder="Mail">
+					<textarea class="contact__message" name="" id="message" cols="20" rows="10"
+						placeholder="Messages"></textarea>
+					<div class="contact__btn"><button>Send Message</button></div>
+				</form>
+			</div>
+
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__item">
+				<div class="about">
+					<div class="footer__title">About</div>
+					<ul>
+						<li><a href="#">History</a></li>
+						<li><a href="#">Our Team</a></li>
+						<li><a href="#">Mission Statement</a></li>
+						<li><a href="#">Terms & Condition</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+					</ul>
+				</div>
+				<div class="what">
+					<div class="footer__title">What we do</div>
+					<ul>
+						<li><a href="#">News and stories</a></li>
+						<li><a href="#">Publications</a></li>
+						<li><a href="#">Take action</a></li>
+						<li><a href="#">Recomendations</a></li>
+						<li><a href="#">Help</a></li>
+					</ul>
+				</div>
+				<div class="adres">
+					<div class="footer__title">Your Copany</div>
+					<ul>
+						<p>Halimun Street 25</p>
+						<p>Jakarta, City 1234</p>
+						<a href="#">www.yourflowersite.com</a>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__social">
+				<p>Follow us!</p>
+				<div class="footer__icon">
+					<a class="icons" href="#">
+						<picture>
+							<source srcset="img/social/face.png" type="image/png"><img src="img/social/face.png"
+								alt="facebook"></picture>
+					</a>
+					<a class="icons" href="#">
+						<picture>
+							<source srcset="img/social/insta.png" type="image/png"><img src="img/social/insta.png"
+								alt="instagram"></picture>
+					</a>
+					<a class="icons" href="#">
+						<picture>
+							<source srcset="img/social/yt.png" type="image/png"><img src="img/social/yt.png" alt="YouTube">
+						</picture>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20220928091654"></script>
+	<script src="js/app.min.js?_v=20220928091654"></script>
+</body>
+
+</html>
